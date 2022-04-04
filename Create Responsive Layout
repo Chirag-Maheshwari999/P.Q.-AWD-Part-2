@@ -1,0 +1,57 @@
+Now that we have talked a lot about responsive layouts, its time for you to design one
+You need to make 3 divs with width of '32%' and height of '300px' and margin 1%. Their colors are - '#ff8989', '#88f7ce', '#e29df2' respectively.
+On screens above 600px they should appear next to each other .
+otherwise they should be stacked as shown in images below. 
+
+
+<html><head>
+    <title>Responsive Design</title>
+</head>
+<body>
+    
+    <h1>Creating Responsive Design</h1>
+    
+    <div>
+        <div class="resp c-red"></div>
+        <div class="resp c-green"></div>
+        <div class="resp c-purple"></div>
+    </div>
+    
+
+</body></html>
+
+
+CSS PART~
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.resp {
+    width: 32%;
+    margin: 0.44%;
+    height: 300px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    .resp {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+}
+
+.c-red {
+    background-color: #ff8989;
+}
+
+.c-green {
+    background-color: #88f7ce;
+}
+
+.c-purple {
+    background-color: #e29df2;
+}
