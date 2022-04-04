@@ -1,0 +1,204 @@
+You now have to create the header for your resume, i.e. navigation links and social links.
+You can put your own name instead of the one in the image below.
+The links for the images is provided below, since they are white in color and would not be visible -
+1. Linkedin - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png
+
+2. Stackoverflow - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png
+
+3. Google Plus - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png
+
+4. Facebook - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png
+
+5. Quora - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png
+The shadow used on the social icons is of the color - 'rgba(230,196,196,0.3)'.
+
+<html><head>
+    <title> My Resume </title>
+</head>
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">
+                    My Name
+                </h1>
+            </div>
+            <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about">
+        </section>
+
+        <section id="skills">
+
+        </section>
+
+        <section id="experience">
+
+        </section>
+
+        <section id="education">
+
+        </section>
+
+        <section id="portfolio">
+
+        </section>
+
+        <section id="contact">
+
+        </section>
+
+    </main>
+
+
+</body></html>
+
+
+
+
+CSS PART
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a img {
+    width: 1rem;
+    padding: 8px;
+}
